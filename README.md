@@ -12,14 +12,14 @@ xcpm_bootstrap Kernel patch seems still required for some fo the Haswell-E CPUs,
 
 In any case note that the implemented but disabled 
 
-#_xcpm_cpuid_set_info 
+# _xcpm_cpuid_set_info 
 
 Find: 723cd077 500fb6c0
 Replace: 6a3cd077 500fb6c0 
 
 and 
 
-#_xcpm_bootstrap 
+# _xcpm_bootstrap 
 
 Find: 89d804c4 3c227722
 Replace:89d804c3 3c227722 
@@ -28,12 +28,12 @@ Kernel patches are for Broadwell-E!
 
 For Haswell-E change to:
 
-#_xcpm_cpuid_set_info 
+# _xcpm_cpuid_set_info 
 
 Find: 723cd077 500fb6c0
 Replace: 6f3cd077 500fb6c0 
 
-#xcpm_bootstrap 
+# xcpm_bootstrap 
 
 Find: 89d804c4 3c227722
 Replace:89d804c1 3c227722 
