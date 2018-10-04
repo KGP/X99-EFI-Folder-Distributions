@@ -16,7 +16,7 @@ to
 
 in config.plist - Section "Kernel and Kext Patches" of Clover Configurator.
 
-Also implemnted but disabled _xcpm_cpuid_set_info  and _xcpm_bootstrap  Kernel patches are for Broadwell-E!
+Also implemented but disabled _xcpm_cpuid_set_info  and _xcpm_bootstrap  Kernel patches are for Broadwell-E!
 
 # _xcpm_cpuid_set_info (Broadwell-E)
 
