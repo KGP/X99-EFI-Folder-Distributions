@@ -18,8 +18,6 @@ Find: 723cd077 500fb6c0
 
 Replace: 6a3cd077 500fb6c0 
 
-and 
-
 # _xcpm_bootstrap (Broadwell-E)
 
 Find: 89d804c4 3c227722
@@ -27,7 +25,7 @@ Find: 89d804c4 3c227722
 Replace:89d804c3 3c227722 
 
 
-# For Haswell-E change to:
+For Haswell-E change to:
 
 # _xcpm_cpuid_set_info (Haswell-E)
 
