@@ -4,13 +4,19 @@
 
 For mainbaords with locked MSR register, check KernelPM and enable _xcpm_core_scope_msrs © Pike R. Alpha Kernel patch in config.plist - Section "Kernel and Kext Patches" of Clover Configurator 
 
-2.) EFI-Folder distributions valid for Broadwell/Broadwell-E
+2.) EFI-Folder distribution valid for Broadwell-E
 
-For use with Haswell/Haswell-E CPUs, change FakeCPUID from 0x040674 to 0x0306F2 in config.plist - Section "Kernel and Kext Patches" of Clover Configurator. _
+For use with Haswell-E CPUs, change 
 
-xcpm_bootstrap Kernel patch seems still required for some fo the Haswell-E CPUs, e.g. i7-5820k. For most Broadwell-E CPUs, _xcpm_cpuid_set_info and _xcpm_bootstrap Kernel patches are obsolete and can remain disabled.
+# FakeCPUID (Broadwell-E):0x040674 
 
-In any case note that the implemented but disabled _xcpm_cpuid_set_info  and _xcpm_bootstrap  Kernel patches are for Broadwell-E!
+to
+
+# FakeCPUID (Haswell-E):0x0306F2
+
+in config.plist - Section "Kernel and Kext Patches" of Clover Configurator.
+
+Also implemnted but disabled _xcpm_cpuid_set_info  and _xcpm_bootstrap  Kernel patches are for Broadwell-E!
 
 # _xcpm_cpuid_set_info (Broadwell-E)
 
@@ -38,3 +44,7 @@ Replace: 6f3cd077 500fb6c0
 Find: 89d804c4 3c227722
 
 Replace:89d804c1 3c227722 
+
+xcpm_bootstrap Kernel patch seems still required for some of the Haswell-E CPUs, e.g. i7-5820k. 
+
+For most Broadwell-E CPUs, _xcpm_cpuid_set_info and _xcpm_bootstrap Kernel patches are however obsolete and can remain disabled.
