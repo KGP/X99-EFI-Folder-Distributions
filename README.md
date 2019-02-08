@@ -45,6 +45,8 @@ Find: 89d804c4 3c227722
 
 Replace:89d804c1 3c227722 
 
-xcpm_bootstrap Kernel patch seems still required for some of the Haswell-E CPUs, e.g. i7-5820k. 
+_xcpm_cpuid_set_info kernel patch is obsolete for Broadwell-E and Haswell-E and can remain disabled
 
-For most Broadwell-E CPUs, _xcpm_cpuid_set_info and _xcpm_bootstrap Kernel patches are however obsolete and can remain disabled.
+_xcpm_bootstrap kernel patch seems still required for some Haswell-E CPUs, e.g. i7-5820k. 
+
+_xcpm_bootstrap Kernel patch for Broadwell-E is also obsolete and can remain disabled.
