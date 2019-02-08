@@ -12,7 +12,7 @@ For use with Haswell-E CPUs, change
 
 to
 
-# FakeCPUID (Haswell-E):0x0306F2
+# FakeCPUID (Haswell-E):not required, natively suported
 
 in config.plist - Section "Kernel and Kext Patches" of Clover Configurator.
 
